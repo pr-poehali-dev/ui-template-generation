@@ -72,23 +72,36 @@ export default function Index() {
       <header className="rosseti-header-bg flex-shrink-0">
         <div className="relative z-10 flex items-center justify-between px-6 py-3.5">
           <div className="flex items-center gap-4">
-            {/* Логотип / бренд */}
+            {/* Логотип Россети */}
             <div className="flex items-center gap-3">
               <div className="flex-shrink-0">
-                <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-                  <circle cx="16" cy="16" r="15" stroke="white" strokeWidth="1.5" strokeOpacity="0.6"/>
-                  <line x1="16" y1="4" x2="16" y2="28" stroke="white" strokeWidth="1.2" strokeOpacity="0.8"/>
-                  <line x1="4" y1="16" x2="28" y2="16" stroke="white" strokeWidth="1.2" strokeOpacity="0.8"/>
-                  <line x1="7.5" y1="7.5" x2="24.5" y2="24.5" stroke="white" strokeWidth="1.2" strokeOpacity="0.8"/>
-                  <line x1="24.5" y1="7.5" x2="7.5" y2="24.5" stroke="white" strokeWidth="1.2" strokeOpacity="0.8"/>
-                  <circle cx="16" cy="16" r="4" fill="white" fillOpacity="0.9"/>
+                {/* Официальный логотип Россети — солнце из лепестков */}
+                <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  {/* Лепесток 1 — верх */}
+                  <path d="M19 19 L16 4 Q19 1 22 4 Z" fill="white" fillOpacity="0.95"/>
+                  {/* Лепесток 2 — верх-право */}
+                  <path d="M19 19 L31.5 9.5 Q34.5 12 31.5 15 Z" fill="white" fillOpacity="0.85"/>
+                  {/* Лепесток 3 — право */}
+                  <path d="M19 19 L34 22 Q34 26 30 26 Z" fill="white" fillOpacity="0.75"/>
+                  {/* Лепесток 4 — низ-право */}
+                  <path d="M19 19 L28 32 Q24.5 35 22 32 Z" fill="white" fillOpacity="0.65"/>
+                  {/* Лепесток 5 — низ */}
+                  <path d="M19 19 L16 34 Q19 37 22 34 Z" fill="white" fillOpacity="0.55"/>
+                  {/* Лепесток 6 — низ-лево */}
+                  <path d="M19 19 L10 32 Q6.5 30 8.5 26.5 Z" fill="white" fillOpacity="0.65"/>
+                  {/* Лепесток 7 — лево */}
+                  <path d="M19 19 L4 22 Q4 18 8 16 Z" fill="white" fillOpacity="0.75"/>
+                  {/* Лепесток 8 — верх-лево */}
+                  <path d="M19 19 L6.5 9.5 Q9.5 6.5 13 9 Z" fill="white" fillOpacity="0.85"/>
+                  {/* Центральный круг */}
+                  <circle cx="19" cy="19" r="5" fill="white"/>
                 </svg>
               </div>
               <div>
-                <div className="font-corp-bold text-white text-base tracking-[0.12em] uppercase leading-none">
+                <div className="font-corp-bold text-white text-[17px] tracking-[0.14em] uppercase leading-none">
                   РОССЕТИ
                 </div>
-                <div className="font-corp-light text-white/55 text-[10px] tracking-[0.18em] uppercase mt-0.5">
+                <div className="font-corp-light text-white/55 text-[10px] tracking-[0.2em] uppercase mt-0.5">
                   Контрольная деятельность
                 </div>
               </div>
