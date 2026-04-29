@@ -75,27 +75,13 @@ export default function Index() {
             {/* Логотип Россети */}
             <div className="flex items-center gap-3">
               <div className="flex-shrink-0">
-                {/* Официальный логотип Россети — солнце из лепестков */}
-                <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  {/* Лепесток 1 — верх */}
-                  <path d="M19 19 L16 4 Q19 1 22 4 Z" fill="white" fillOpacity="0.95"/>
-                  {/* Лепесток 2 — верх-право */}
-                  <path d="M19 19 L31.5 9.5 Q34.5 12 31.5 15 Z" fill="white" fillOpacity="0.85"/>
-                  {/* Лепесток 3 — право */}
-                  <path d="M19 19 L34 22 Q34 26 30 26 Z" fill="white" fillOpacity="0.75"/>
-                  {/* Лепесток 4 — низ-право */}
-                  <path d="M19 19 L28 32 Q24.5 35 22 32 Z" fill="white" fillOpacity="0.65"/>
-                  {/* Лепесток 5 — низ */}
-                  <path d="M19 19 L16 34 Q19 37 22 34 Z" fill="white" fillOpacity="0.55"/>
-                  {/* Лепесток 6 — низ-лево */}
-                  <path d="M19 19 L10 32 Q6.5 30 8.5 26.5 Z" fill="white" fillOpacity="0.65"/>
-                  {/* Лепесток 7 — лево */}
-                  <path d="M19 19 L4 22 Q4 18 8 16 Z" fill="white" fillOpacity="0.75"/>
-                  {/* Лепесток 8 — верх-лево */}
-                  <path d="M19 19 L6.5 9.5 Q9.5 6.5 13 9 Z" fill="white" fillOpacity="0.85"/>
-                  {/* Центральный круг */}
-                  <circle cx="19" cy="19" r="5" fill="white"/>
-                </svg>
+                <img
+                  src="https://cdn.poehali.dev/files/159a9c52-4c4e-46d1-841e-124853c3e035.png"
+                  alt="Логотип"
+                  width="38"
+                  height="38"
+                  style={{ filter: 'brightness(0) invert(1)' }}
+                />
               </div>
               <div>
                 <div className="font-corp-bold text-white text-[15px] tracking-[0.1em] uppercase leading-none">
