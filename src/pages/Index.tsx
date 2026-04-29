@@ -98,8 +98,8 @@ export default function Index() {
                 </svg>
               </div>
               <div>
-                <div className="font-corp-bold text-white text-[17px] tracking-[0.14em] uppercase leading-none">
-                  РОССЕТИ
+                <div className="font-corp-bold text-white text-[15px] tracking-[0.1em] uppercase leading-none">
+                  Центр технического надзора
                 </div>
                 <div className="font-corp-light text-white/55 text-[10px] tracking-[0.2em] uppercase mt-0.5">
                   Контрольная деятельность
