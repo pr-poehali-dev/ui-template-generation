@@ -138,7 +138,7 @@ export default function Index() {
         <div className="relative z-10 flex items-center gap-1.5 px-6 py-1.5 border-t border-white/8 bg-black/10">
           <span className="text-white/35 text-[10px] font-corp-light tracking-wider">Главная</span>
           <Icon name="ChevronRight" size={9} className="text-white/25" />
-          <span className="text-white/35 text-[10px] font-corp-light tracking-wider">Контрольная деятельность</span>
+          <span className="text-white/35 text-[10px] font-corp-light tracking-wider">Надзорная деятельность</span>
           <Icon name="ChevronRight" size={9} className="text-white/25" />
           <span className="text-[hsl(var(--corp-accent))] text-[10px] font-corp-medium tracking-wider">Планирование проверок</span>
         </div>
