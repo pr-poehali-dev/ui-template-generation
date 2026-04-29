@@ -102,7 +102,7 @@ export default function Index() {
                   Центр технического надзора
                 </div>
                 <div className="font-corp-light text-white/55 text-[10px] tracking-[0.2em] uppercase mt-0.5">
-                  Контрольная деятельность
+                  Надзорная деятельность
                 </div>
               </div>
             </div>
