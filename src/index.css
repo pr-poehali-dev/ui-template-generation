@@ -115,25 +115,12 @@
   }
 
   .rosseti-header-bg {
-    background: linear-gradient(
-      135deg,
-      hsl(217, 72%, 14%) 0%,
-      hsl(217, 65%, 22%) 40%,
-      hsl(210, 60%, 28%) 100%
-    );
+    background-image: url("https://cdn.poehali.dev/files/e1d5478b-d72e-4549-9094-15ee0330e8f6.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
     position: relative;
     overflow: hidden;
-  }
-
-  .rosseti-header-bg::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image: url("https://cdn.poehali.dev/files/f09e4e00-4e58-4eb7-a149-dde25309d2af.png");
-    background-size: 280px auto;
-    background-repeat: repeat;
-    opacity: 0.12;
-    pointer-events: none;
   }
 
   .animate-fade-in {
