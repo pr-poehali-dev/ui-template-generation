@@ -67,7 +67,8 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: "IBM Plex Sans", sans-serif;
+    font-family: "PF Din Text Cond Pro", "IBM Plex Sans", sans-serif;
+    font-weight: 300;
     font-size: 13px;
     line-height: 1.5;
   }
@@ -78,14 +79,61 @@
   h4,
   h5,
   h6 {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 600;
+    font-family: "PF Din Text Cond Pro", "IBM Plex Sans", sans-serif;
+    font-weight: 500;
   }
 }
 
 @layer utilities {
   .font-mono-corp {
-    font-family: "IBM Plex Mono", monospace;
+    font-family: "PF Din Text Cond Pro", "IBM Plex Mono", monospace;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+  }
+
+  .font-corp-medium {
+    font-family: "PF Din Text Cond Pro", "IBM Plex Sans", sans-serif;
+    font-weight: 500;
+  }
+
+  .font-corp-bold {
+    font-family: "PF Din Text Cond Pro", "IBM Plex Sans", sans-serif;
+    font-weight: 700;
+  }
+
+  .font-corp-light {
+    font-family: "PF Din Text Cond Pro", "IBM Plex Sans", sans-serif;
+    font-weight: 300;
+  }
+
+  /* Россети паттерн — схемы электросетей */
+  .rosseti-pattern {
+    background-image: url("https://cdn.poehali.dev/files/f09e4e00-4e58-4eb7-a149-dde25309d2af.png");
+    background-size: 320px auto;
+    background-repeat: repeat;
+    background-position: center;
+  }
+
+  .rosseti-header-bg {
+    background: linear-gradient(
+      135deg,
+      hsl(217, 72%, 14%) 0%,
+      hsl(217, 65%, 22%) 40%,
+      hsl(210, 60%, 28%) 100%
+    );
+    position: relative;
+    overflow: hidden;
+  }
+
+  .rosseti-header-bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("https://cdn.poehali.dev/files/f09e4e00-4e58-4eb7-a149-dde25309d2af.png");
+    background-size: 280px auto;
+    background-repeat: repeat;
+    opacity: 0.12;
+    pointer-events: none;
   }
 
   .animate-fade-in {

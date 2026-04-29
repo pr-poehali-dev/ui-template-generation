@@ -53,8 +53,8 @@ export default function FiltersPanel({ filters, onChange, branches, causeCategor
   return (
     <div className="bg-white corp-shadow flex flex-col" style={{ minWidth: 220, maxWidth: 240 }}>
       {/* Header */}
-      <div className="flex items-center justify-between px-4 py-3 border-b border-[hsl(var(--corp-border))] bg-[hsl(var(--corp-navy))]">
-        <span className="text-xs font-semibold text-white uppercase tracking-widest">Фильтры</span>
+      <div className="flex items-center justify-between px-4 py-3 border-b border-[hsl(var(--corp-border))] rosseti-header-bg">
+        <span className="font-corp-medium text-[11px] text-white uppercase tracking-[0.15em] relative z-10">Фильтры</span>
         <button onClick={() => setCollapsed(c => !c)} className="text-white/60 hover:text-white transition-colors">
           <Icon name={collapsed ? 'ChevronDown' : 'ChevronUp'} size={14} />
         </button>

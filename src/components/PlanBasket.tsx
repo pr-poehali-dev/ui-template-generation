@@ -46,21 +46,21 @@ export default function PlanBasket({ items, onRemove }: PlanBasketProps) {
   return (
     <div className="corp-shadow bg-white">
       {/* Header */}
-      <div className="flex items-center justify-between px-4 py-2.5 bg-[hsl(var(--corp-navy))] border-b border-white/10">
-        <div className="flex items-center gap-2">
+      <div className="flex items-center justify-between px-4 py-2.5 rosseti-header-bg border-b border-white/10">
+        <div className="flex items-center gap-2 relative z-10">
           <Icon name="ShoppingCart" size={13} className="text-[hsl(var(--corp-accent))]" />
-          <span className="text-[10px] font-semibold text-white uppercase tracking-widest">Итоговый план проверок</span>
+          <span className="font-corp-medium text-[10px] text-white uppercase tracking-[0.14em]">Итоговый план проверок</span>
           {items.length > 0 && (
-            <span className="bg-[hsl(var(--corp-accent))] text-white text-[9px] font-bold px-1.5 py-0.5 rounded-sm font-mono-corp">
+            <span className="bg-[hsl(var(--corp-accent))] text-white text-[9px] font-corp-bold px-1.5 py-0.5">
               {items.length}
             </span>
           )}
         </div>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 relative z-10">
           <button
             onClick={handleExport}
             disabled={items.length === 0}
-            className="flex items-center gap-1.5 text-[10px] font-semibold text-[hsl(var(--corp-accent))] hover:text-white disabled:text-white/30 disabled:cursor-not-allowed transition-colors uppercase tracking-wider"
+            className="flex items-center gap-1.5 text-[10px] font-corp-medium text-[hsl(var(--corp-accent))] hover:text-white disabled:text-white/30 disabled:cursor-not-allowed transition-colors uppercase tracking-wider"
           >
             <Icon name="Download" size={11} />
             Экспорт .xlsx (Р7)

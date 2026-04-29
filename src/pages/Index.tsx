@@ -68,43 +68,69 @@ export default function Index() {
 
   return (
     <div className="min-h-screen bg-[hsl(var(--background))] flex flex-col" style={{ height: '100vh' }}>
-      {/* Top header */}
-      <header className="bg-[hsl(var(--corp-navy))] flex-shrink-0">
-        <div className="flex items-center justify-between px-6 py-3">
+      {/* Top header — фирменный стиль Россети */}
+      <header className="rosseti-header-bg flex-shrink-0">
+        <div className="relative z-10 flex items-center justify-between px-6 py-3.5">
           <div className="flex items-center gap-4">
-            <div className="flex items-center gap-2.5">
-              <div className="w-7 h-7 bg-[hsl(var(--corp-accent))] flex items-center justify-center flex-shrink-0">
-                <Icon name="Zap" size={14} className="text-white" />
+            {/* Логотип / бренд */}
+            <div className="flex items-center gap-3">
+              <div className="flex-shrink-0">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                  <circle cx="16" cy="16" r="15" stroke="white" strokeWidth="1.5" strokeOpacity="0.6"/>
+                  <line x1="16" y1="4" x2="16" y2="28" stroke="white" strokeWidth="1.2" strokeOpacity="0.8"/>
+                  <line x1="4" y1="16" x2="28" y2="16" stroke="white" strokeWidth="1.2" strokeOpacity="0.8"/>
+                  <line x1="7.5" y1="7.5" x2="24.5" y2="24.5" stroke="white" strokeWidth="1.2" strokeOpacity="0.8"/>
+                  <line x1="24.5" y1="7.5" x2="7.5" y2="24.5" stroke="white" strokeWidth="1.2" strokeOpacity="0.8"/>
+                  <circle cx="16" cy="16" r="4" fill="white" fillOpacity="0.9"/>
+                </svg>
               </div>
               <div>
-                <div className="text-white font-semibold text-sm tracking-wide">ПЛАНИРОВАНИЕ ПРОВЕРОК</div>
-                <div className="text-white/40 text-[10px] uppercase tracking-widest">Система управления контрольной деятельностью</div>
+                <div className="font-corp-bold text-white text-base tracking-[0.12em] uppercase leading-none">
+                  РОССЕТИ
+                </div>
+                <div className="font-corp-light text-white/55 text-[10px] tracking-[0.18em] uppercase mt-0.5">
+                  Контрольная деятельность
+                </div>
+              </div>
+            </div>
+
+            {/* Разделитель */}
+            <div className="w-px h-8 bg-white/15 mx-1"></div>
+
+            {/* Название модуля */}
+            <div>
+              <div className="font-corp-medium text-white text-[13px] tracking-[0.08em] uppercase">
+                Планирование проверок
+              </div>
+              <div className="font-corp-light text-white/40 text-[10px] tracking-wider mt-0.5">
+                Система управления проверочной деятельностью
               </div>
             </div>
           </div>
+
           <div className="flex items-center gap-5">
-            <div className="flex items-center gap-1.5 text-white/50 text-[11px]">
+            <div className="flex items-center gap-1.5 text-white/50 text-[11px] font-corp-light">
               <Icon name="Calendar" size={11} />
               <span className="font-mono-corp">29.04.2026</span>
             </div>
-            <div className="flex items-center gap-1.5 text-white/50 text-[11px]">
+            <div className="flex items-center gap-1.5 text-white/50 text-[11px] font-corp-light">
               <Icon name="Database" size={11} />
               <span>{objectRecords.length} объектов в базе</span>
             </div>
             <div className="flex items-center gap-1.5">
               <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-              <span className="text-white/50 text-[11px]">Данные актуальны</span>
+              <span className="text-white/50 text-[11px] font-corp-light">Данные актуальны</span>
             </div>
           </div>
         </div>
 
         {/* Breadcrumb */}
-        <div className="flex items-center gap-1.5 px-6 py-1.5 border-t border-white/5 bg-white/5">
-          <span className="text-white/40 text-[10px]">Главная</span>
-          <Icon name="ChevronRight" size={9} className="text-white/30" />
-          <span className="text-white/40 text-[10px]">Контрольная деятельность</span>
-          <Icon name="ChevronRight" size={9} className="text-white/30" />
-          <span className="text-[hsl(var(--corp-accent))] text-[10px] font-medium">Планирование проверок</span>
+        <div className="relative z-10 flex items-center gap-1.5 px-6 py-1.5 border-t border-white/8 bg-black/10">
+          <span className="text-white/35 text-[10px] font-corp-light tracking-wider">Главная</span>
+          <Icon name="ChevronRight" size={9} className="text-white/25" />
+          <span className="text-white/35 text-[10px] font-corp-light tracking-wider">Контрольная деятельность</span>
+          <Icon name="ChevronRight" size={9} className="text-white/25" />
+          <span className="text-[hsl(var(--corp-accent))] text-[10px] font-corp-medium tracking-wider">Планирование проверок</span>
         </div>
       </header>
 
@@ -121,8 +147,8 @@ export default function Index() {
             <div key={i} className="flex items-center gap-2.5 px-5 py-2">
               <Icon name={s.icon} size={13} className={s.highlight ? 'text-yellow-300' : s.accent ? 'text-[hsl(var(--corp-accent))]' : 'text-white/50'} />
               <div>
-                <div className={`font-mono-corp text-sm font-semibold ${s.highlight ? 'text-yellow-300' : s.accent ? 'text-[hsl(var(--corp-accent))]' : 'text-white'}`}>{s.value}</div>
-                <div className="text-white/50 text-[10px]">{s.label}</div>
+                <div className={`font-corp-medium text-sm tracking-wide ${s.highlight ? 'text-yellow-300' : s.accent ? 'text-[hsl(var(--corp-accent))]' : 'text-white'}`}>{s.value}</div>
+                <div className="text-white/45 text-[10px] font-corp-light tracking-wider">{s.label}</div>
               </div>
             </div>
           ))}

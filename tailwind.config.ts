@@ -65,8 +65,9 @@ export default {
 				}
 			},
 			fontFamily: {
-				sans: ['IBM Plex Sans', 'sans-serif'],
-				mono: ['IBM Plex Mono', 'monospace'],
+				sans: ['PF Din Text Cond Pro', 'IBM Plex Sans', 'sans-serif'],
+				mono: ['PF Din Text Cond Pro', 'IBM Plex Mono', 'monospace'],
+				corp: ['PF Din Text Cond Pro', 'IBM Plex Sans', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

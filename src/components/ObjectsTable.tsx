@@ -35,12 +35,12 @@ export default function ObjectsTable({ objects, planItems, onAddToPlan }: Object
   return (
     <div className="corp-shadow bg-white">
       {/* Section header */}
-      <div className="flex items-center justify-between px-4 py-2.5 bg-[hsl(var(--corp-navy))] border-b border-white/10">
-        <div className="flex items-center gap-2">
+      <div className="flex items-center justify-between px-4 py-2.5 rosseti-header-bg border-b border-white/10">
+        <div className="flex items-center gap-2 relative z-10">
           <Icon name="ListOrdered" size={13} className="text-[hsl(var(--corp-accent))]" />
-          <span className="text-[10px] font-semibold text-white uppercase tracking-widest">Приоритетный перечень объектов</span>
+          <span className="font-corp-medium text-[10px] text-white uppercase tracking-[0.14em]">Приоритетный перечень объектов</span>
         </div>
-        <span className="text-[10px] font-mono-corp text-white/60">{objects.length} объектов</span>
+        <span className="font-corp-light text-[10px] text-white/55 relative z-10">{objects.length} объектов</span>
       </div>
 
       {/* Table */}

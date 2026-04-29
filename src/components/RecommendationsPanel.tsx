@@ -74,12 +74,12 @@ export default function RecommendationsPanel({ recommendations, planItems, onAdd
   };
 
   const SectionHeader = ({ title, icon, count }: { title: string; icon: string; count: number }) => (
-    <div className="flex items-center justify-between px-3 py-2 bg-[hsl(var(--corp-navy))] mb-0">
-      <div className="flex items-center gap-2">
+    <div className="flex items-center justify-between px-3 py-2 rosseti-header-bg mb-0">
+      <div className="flex items-center gap-2 relative z-10">
         <Icon name={icon} size={12} className="text-[hsl(var(--corp-accent))]" />
-        <span className="text-[10px] font-semibold text-white uppercase tracking-widest">{title}</span>
+        <span className="font-corp-medium text-[10px] text-white uppercase tracking-[0.14em]">{title}</span>
       </div>
-      <span className="text-[10px] font-mono-corp text-white/60">{count} рек.</span>
+      <span className="font-corp-light text-[10px] text-white/55 relative z-10">{count} рек.</span>
     </div>
   );
 
