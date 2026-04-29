@@ -115,9 +115,6 @@ export default function Index() {
               <div className="font-corp-medium text-white text-[13px] tracking-[0.08em] uppercase">
                 Планирование проверок
               </div>
-              <div className="font-corp-light text-white/40 text-[10px] tracking-wider mt-0.5">
-                Система управления проверочной деятельностью
-              </div>
             </div>
           </div>
 
